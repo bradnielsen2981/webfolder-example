@@ -1,6 +1,8 @@
 alert("Hello world");
 console.log("Hello world");
 
+var age = 15; //global variable
+
 //JAVASCRIPT can access parts of the page using Document Object Model
 function changeAlbert()
 {
@@ -18,4 +20,9 @@ function changeAlbertBack()
     block.style.backgroundColor = "gray";
     block.style.color = "white";
     block.style.visibility = 'hidden';
+}
+
+function getAge()
+{
+   alert(age); 
 }
