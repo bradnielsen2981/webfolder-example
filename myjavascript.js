@@ -27,3 +27,12 @@ function getAge()
    alert(age); 
    age = age + 1;
 }
+
+function checkAge()
+{
+    a = document.getElementByID('age').value;
+    if (a > 0) and (a < 100)
+    {
+        age = a;
+    }
+}
