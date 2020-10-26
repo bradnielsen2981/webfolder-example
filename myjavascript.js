@@ -25,4 +25,5 @@ function changeAlbertBack()
 function getAge()
 {
    alert(age); 
+   age = age + 1;
 }
