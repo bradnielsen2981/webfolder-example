@@ -30,9 +30,12 @@ function getAge()
 
 function checkAge()
 {
-    a = document.getElementByID('age').value;
-    if (a > 0) and (a < 100)
+    a = document.getElementById('age').value;
+    a = parseInt(a);
+    if ((a > 0) && (a < 100))
     {
         age = a;
+    } else {
+        alert("Value incorrect");
     }
 }
