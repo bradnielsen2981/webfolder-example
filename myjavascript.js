@@ -38,4 +38,8 @@ function checkAge()
     } else {
         alert("Value incorrect");
     }
+    for (count=0; count<age; count++)
+    {
+        console.log(count);
+    }
 }
