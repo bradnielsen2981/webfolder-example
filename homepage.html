@@ -7,10 +7,23 @@
     <body>
         <!-- THIS IS HTML COMMENT -->
         <h1>Life as a Teacher</h1>
-        <a href="" onmouseout="changeAlbertBack();" onmouseover="changeAlbert();">Change Albert</a>
+        
+        <a href="" onmouseout="hideRollover('albert');" onmouseover="showRollover('albert');">Change Albert</a>
         <div id="albert" class="block">
             Show this section
         </div>
+
+        <a href="" onmouseout="hideRollover('bob');" onmouseover="showRollover('bob');">Change Albert</a>
+        <div id="bob" class="block">
+            Show this section
+        </div>
+
+
+
+
+
+
+
         <p>Teaching is a rewarding career if you dont mind putting up with students' stupid questions...</p>
         <div class='block2' onclick="getAge();">
             <p>Teacher Jokes HAHAHAHA</p>
@@ -28,9 +41,13 @@
         </div>
         <div class="block">
             Show this section
+            <br><br>
             <form>
                 Age: <input type="number" id="age">
-                <input type="button" value="Submit" onclick="checkAge();">    
+                <input type="button" value="Submit" onclick="checkAge();"> 
+                <br><br>
+                Message: <input type="text" id="message" cols="40">
+                <input type="button" value="Submit" onclick="encrypt();">    
             </form>
         </div>
         <br>

@@ -4,19 +4,17 @@ console.log("Hello world");
 var age = 15; //global variable
 
 //JAVASCRIPT can access parts of the page using Document Object Model
-function changeAlbert()
+function showRollover(rolloverid)
 {
-    var block = document.getElementById("albert");
-    block.innerHTML = "<b>ALBERT HAS CHANGED!</b>";
+    var block = document.getElementById(rolloverid);
     block.style.backgroundColor = "purple";
     block.style.color = "black";
     block.style.visibility = 'visible';
 }
 
-function changeAlbertBack()
+function hideRollover(rolloverid)
 {
-    var block = document.getElementById("albert");
-    block.innerHTML = "Show this section";
+    var block = document.getElementById(rolloverid);
     block.style.backgroundColor = "gray";
     block.style.color = "white";
     block.style.visibility = 'hidden';
@@ -41,5 +39,16 @@ function checkAge()
     for (count=0; count<age; count++)
     {
         console.log(count);
+    }
+}
+
+
+
+function encrypt()
+{
+    message = document.getElementById("message").value;
+    for (index=0; index<message.length; index++)
+    {
+        alert(message[index]);
     }
 }
