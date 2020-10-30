@@ -42,6 +42,15 @@ float:right;
     top:100;
 }
 
+#bob 
+{
+    visibility: hidden;
+    z-index:20;
+    position:absolute;
+    left:100;
+    top:100;
+}
+
 img { margin:30px;  }
 
 .block img { margin:10px; box-shadow:5px 5px 5px 5px #00000038; }
