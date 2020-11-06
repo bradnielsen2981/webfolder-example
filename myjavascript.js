@@ -46,15 +46,17 @@ function encrypt()
 {
     message = document.getElementById("message").value;
     alpha = 'abcdefghijklmnopqrstuvwxyz';
-    for (a = 0; a <26; a++)
-    {
-        alert(alpha[a]);
-    }
+    /*
 
-    
+    */
+    shift = 5;
     for (index=0; index<message.length; index++)
     {
         alert(message[index]);
+        for (a = 0; a <26; a++)
+        {
+            
+        } 
     }
 }
 
