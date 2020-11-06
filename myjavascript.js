@@ -1,7 +1,7 @@
-alert("Hello world");
 console.log("Hello world");
 
 var age = 15; //global variable
+//for loop to count from one to ten
 
 //JAVASCRIPT can access parts of the page using Document Object Model
 function showRollover(rolloverid)
@@ -42,13 +42,20 @@ function checkAge()
     }
 }
 
-
-
 function encrypt()
 {
     message = document.getElementById("message").value;
+    alpha = 'abcdefghijklmnopqrstuvwxyz';
+    for (a = 0; a <26; a++)
+    {
+        alert(alpha[a]);
+    }
+
+    
     for (index=0; index<message.length; index++)
     {
         alert(message[index]);
     }
 }
+
+
